@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iron Myth Gym | Programs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Parallax Background (same site background layer) -->
+  <div class="bg-wrap" aria-hidden="true">
+    <div id="bg" class="bg"></div>
+    <div class="bg-overlay"></div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Iron Myth</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link active" href="programs.html">Programs</a>
+      </nav>
+
+      <a class="cta" href="membership.html">Sign Up</a>
+    </div>
+  </header>
+
+  <main class="page">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="badge">CHOOSE YOUR PATH</p>
+          <h1>Programs for <span class="accent">Legends</span></h1>
+          <p class="lead">
+            Beginner, Intermediate, and Pro tracks — same discipline, different consequences.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="membership.html">Join Now</a>
+            <a class="btn ghost" href="#special">Special Programs</a>
+          </div>
+
+          <p class="fineprint">
+            If you’re looking for motivational quotes, try the internet. We have barbells.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Programs (ONLY 3: beginner / intermediate / pro) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured Programs</h2>
+          <p>Three levels. One outcome: progress.</p>
+        </div>
+
+        <div class="grid-3">
+        <article class="card">
+            <div class="card-top">
+            <h3>King Kong Dad Protocol</h3>
+            <span class="pill">BEGINNER</span>
+            </div>
+            <p>
+            Strength foundations, mobility, and joint sanity.
+            Built for people who want to be strong without breaking themselves.
+            </p>
+            <p class="micro">Duration: 4 weeks • Focus: Foundations + Longevity</p>
+        </article>
+
+        <article class="card">
+            <div class="card-top">
+            <h3>Spartan Strength</h3>
+            <span class="pill">INTERMEDIATE</span>
+            </div>
+            <p>
+            Barbell fundamentals with progressive overload.
+            Leg day slowly becomes a personality trait.
+            </p>
+            <p class="micro">Duration: 8 weeks • Focus: Strength</p>
+        </article>
+
+        <article class="card">
+            <div class="card-top">
+            <h3>Godslayer Combat Conditioning</h3>
+            <span class="pill">PRO</span>
+            </div>
+            <p>
+            Bag work, footwork, and brutal intervals.
+            Careful — people may start mistaking you for a tank.
+            </p>
+            <p class="micro">Duration: 8 weeks • Focus: Combat + Conditioning</p>
+        </article>
+        </div>
+
+
+        <div style="height:22px"></div>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="membership.html">Register for Membership</a>
+          <a class="btn ghost" href="about.html">Meet the Gym</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Programs (2 cards) -->
+    <section id="special" class="section section-dim">
+      <div class="container">
+        <div class="section-head">
+          <h2>Special Programs</h2>
+          <p>For extremes only: legends… and the “I need a push” squad.</p>
+        </div>
+
+        <div class="special-grid">
+          <!-- Legends (gold frame, blinking) -->
+            <article class="card special legend">
+            <div class="card-top">
+                <h3>Legend Protocol</h3>
+                <span class="pill">LEGENDS</span>
+            </div>
+
+            <p>
+                A program for people who believe that physics and biology are optional.
+                In 12 weeks we turn you into a machine.
+                Natural laws are not included.
+            </p>
+
+            <ul class="bullets">
+                <li>Max-effort barbell work and heavy compound lifts</li>
+                <li>Brutal conditioning circuits designed to break comfort</li>
+                <li>Training volume that makes recovery a suggestion</li>
+            </ul>
+
+            <button class="btn ghost details-btn" type="button" data-target="legendDetails">
+                View Terms
+            </button>
+
+            <div id="legendDetails" class="details" hidden>
+                <p class="micro">
+                Disclaimer: We are not responsible if people start avoiding you,
+                or if you are no longer welcome on Olympus.
+                Physics and biology are treated as guidelines.
+                </p>
+            </div>
+            </article>
+
+
+          <!-- Motivation (red frame) -->
+          <article class="card special toughlove">
+            <div class="card-top">
+                <h3>Forced Motivation Plan</h3>
+                <span class="pill">TOUGH LOVE</span>
+            </div>
+
+            <p>
+                We don’t motivate with pretty words.
+                If you skip a workout — we will find you and bring you back.
+                You don’t need motivation — you need control.
+            </p>
+
+            <ul class="bullets">
+                <li>Strict schedule and accountability checks</li>
+                <li>Simple plan with zero room for excuses</li>
+                <li>Even death does not automatically cancel your session</li>
+            </ul>
+
+            <button class="btn primary details-btn" type="button" data-target="toughDetails">
+                How It Works
+            </button>
+
+            <div id="toughDetails" class="details" hidden>
+                <p class="micro">
+                How it works: reminders → tracking → showing up.
+                If you disappear, we find you.
+                If you escape this world, we will schedule your return.
+                </p>
+            </div>
+            </article>
+
+        </div>
+
+        <div style="height:16px"></div>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="membership.html">Sign Up</a>
+          <a class="btn ghost" href="index.html#testimonials">Read Testimonials</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-brand">Iron Myth Gym</div>
+          <div class="footer-text">Serious layout. Satirical content. Real grades.</div>
+        </div>
+        <div class="footer-text">
+          © <span id="year"></span> Iron Myth. All myths reserved.
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Programs-only JS -->
+  <script src="programs.js"></script>
+</body>
+</html>

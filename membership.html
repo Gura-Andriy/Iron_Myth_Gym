@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iron Myth Gym | Membership</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Background layer -->
+  <div class="bg-wrap" aria-hidden="true">
+    <div id="bg" class="bg"></div>
+    <div class="bg-overlay"></div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Iron Myth</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href="programs.html">Programs</a>
+      </nav>
+
+      <a class="cta active" href="membership.html">Sign Up</a>
+    </div>
+  </header>
+
+  <main class="page">
+
+    <!-- Hero -->
+    <section class="hero membership-hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="badge">MEMBERSHIP REGISTRATION</p>
+          <h1>Join the gym. Become a <span class="accent">legend</span>.</h1>
+          <p class="lead">
+            Structured training, measurable progress, and just enough satire to keep reality humble.
+          </p>
+          <p class="fineprint">
+            Motivation is optional. Showing up is not.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="section section-dim">
+      <div class="container">
+        <div class="section-head">
+          <h2>Registration Form</h2>
+          <p>Please complete all fields. Physics knowledge is discouraged.</p>
+        </div>
+
+        <div class="form-wrap">
+          <div id="formAlert" class="form-alert" role="status" aria-live="polite"></div>
+
+          <form id="regForm" class="form-card" novalidate>
+            <div class="form-grid">
+
+              <div class="field">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" autocomplete="given-name" placeholder="Chuck" />
+                <div class="error" id="err-firstName"></div>
+              </div>
+
+              <div class="field">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" autocomplete="family-name" placeholder="Norris" />
+                <div class="error" id="err-lastName"></div>
+              </div>
+
+              <div class="field">
+                <label for="dob">Date of Birth</label>
+                <input id="dob" name="dob" type="date" />
+                <div class="error" id="err-dob"></div>
+              </div>
+
+              <div class="field">
+                <label for="program">Program</label>
+                <select id="program" name="program">
+                  <option value="">Select a program</option>
+                  <!-- options injected by JS -->
+                </select>
+                <div class="error" id="err-program"></div>
+              </div>
+
+              <div class="field">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="new-password" placeholder="Min 8 chars, 1 uppercase, 1 number" />
+                <div class="error" id="err-password"></div>
+              </div>
+
+              <div class="field">
+                <label for="confirmPassword">Confirm Password</label>
+                <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Type it again (carefully)" />
+                <div class="error" id="err-confirmPassword"></div>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" />
+                <div class="error" id="err-email"></div>
+              </div>
+
+              <div class="field">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                  <option value="">Select</option>
+                  <!-- options injected by JS -->
+                </select>
+                <div class="error" id="err-gender"></div>
+              </div>
+
+            </div>
+
+            <div class="field checkbox-row">
+              <label class="checkbox">
+                <input id="physics" name="physics" type="checkbox" />
+                <span>I am not familiar with the laws of physics</span>
+              </label>
+              <div class="error" id="err-physics"></div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn primary" type="submit">Submit</button>
+              <button class="btn ghost" type="reset">Reset</button>
+            </div>
+          </form>
+
+          <div id="summary" class="summary-card" hidden>
+            <h3>✅ Registration Preview</h3>
+            <p class="micro">This is a preview only (no data is actually sent anywhere).</p>
+            <div id="summaryBody" class="summary-body"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-brand">Iron Myth Gym</div>
+          <div class="footer-text">Serious layout. Satirical content. Real grades.</div>
+        </div>
+        <div class="footer-text">© <span id="year"></span> Iron Myth. All myths reserved.</div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="membership.js"></script>
+</body>
+</html>

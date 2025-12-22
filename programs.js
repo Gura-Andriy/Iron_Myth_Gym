@@ -20,7 +20,6 @@ buttons.forEach((btn) => {
 
     if (isHidden) {
       panel.removeAttribute("hidden");
-      // optional: change button text a bit
       btn.textContent = "Hide";
     } else {
       panel.setAttribute("hidden", "");

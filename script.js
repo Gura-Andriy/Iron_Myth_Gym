@@ -83,7 +83,7 @@ function pickNewTestimonial() {
 }
 
 function startAutoRotation() {
-  // Auto rotate every ~5 seconds (as requested earlier)
+  // Auto rotate every ~7 seconds
   autoTimer = setInterval(pickNewTestimonial, 7000);
 }
 
@@ -97,13 +97,13 @@ function updateParallax() {
   const y = window.scrollY || 0;
 
   // background moves upward slower than scroll
-  const speed = 0.25; // tweak 0.18..0.35
+  const speed = 0.25;
   const translateY = -(y * speed);
 
   // blur increases with scroll (cap)
   const blur = Math.min(12, y / 220); // max 12px
 
-  // optional slight dim as you scroll (keeps readability)
+  // slight dim as scroll (keeps readability)
   const dim = Math.min(0.22, y / 4500);
 
   if (bg) {

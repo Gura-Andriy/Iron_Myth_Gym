@@ -39,8 +39,8 @@ a{color:inherit; text-decoration:none}
 
 .bg{
   position: absolute;
-  inset: -14vh -8vw; /* запас, щоб не з'являлися краї при русі */
-  background-image: url("images/bg-statue.jpg"); /* <-- ТУТ ТВОЯ КАРТИНКА */
+  inset: -14vh -8vw; /* margin so that edges do not appear when moving */
+  background-image: url("images/bg-statue.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 70%;
@@ -174,7 +174,7 @@ a{color:inherit; text-decoration:none}
   margin-top: 18px;
 }
 .stat{
-  background: rgba(16,24,38,.55); /* трохи темніше для читабельності на фото */
+  background: rgba(16,24,38,.55);
   border: 1px solid rgba(255,255,255,.08);
   border-radius: var(--radius);
   padding: 16px 16px;
@@ -262,7 +262,7 @@ a{color:inherit; text-decoration:none}
   color: rgba(233,238,246,.75);
 }
 
-/* Minimal visualization (meters) */
+/* Minimal visualization */
 .meter{margin: 14px 0 14px}
 .meter-label{
   display:flex; justify-content:space-between; align-items:center;
@@ -349,11 +349,8 @@ a{color:inherit; text-decoration:none}
   .bg{background-position: center 75%;}
 }
 
-/* --------------------------------    */
-
 /* =========================
    PROGRAMS PAGE ADD-ONS
-   (safe to append at the end)
    ========================= */
 
 .special-grid{
@@ -427,11 +424,6 @@ a{color:inherit; text-decoration:none}
   .special-grid{grid-template-columns: 1fr;}
 }
 
-
-
-
-
-
 /* Red glint for Forced Motivation */
 .card.special.toughlove::before{
   content:"";
@@ -466,14 +458,8 @@ a{color:inherit; text-decoration:none}
   overflow: hidden;
 }
 
-
-
-
-
-
 /* =========================
    ABOUT PAGE ADD-ONS
-   (append only)
    ========================= */
 
 .about-hero .hero-copy{
@@ -564,7 +550,7 @@ a{color:inherit; text-decoration:none}
 
   /* fake dark mode */
   filter: invert(92%) hue-rotate(180deg) saturate(120%) brightness(85%) contrast(105%);
-  pointer-events: none; /* required */
+  pointer-events: none;
 }
 
 .map-note{
@@ -572,12 +558,8 @@ a{color:inherit; text-decoration:none}
   text-align: center;
 }
 
-
-
-
 /* =========================
    MEMBERSHIP PAGE ADD-ONS
-   (append only)
    ========================= */
 
 .membership-hero .hero-copy{
@@ -741,17 +723,14 @@ a{color:inherit; text-decoration:none}
   .form-grid{grid-template-columns: 1fr;}
 }
 
-
-
-
-/* Dark dropdown options (best effort, browser-limited) */
+/* Dark dropdown options */
 select{
   background-color: rgba(16,24,38,.85);
   color: rgba(233,238,246,.92);
 }
 
 select option{
-  background-color: #0f1626; /* dark */
+  background-color: #0f1626;
   color: #e9eef6;
 }
 
